@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style>
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    color: gray;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+
+  .login {
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="hidden"] {
+    display: none;
+  }
+
+  #flogin {
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    background-color:gray;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056ba;
+  }
+</style>
+</head>
+<body>
+<h1>로그인 화면</h1>
+<div class="login">
+  <form method="get" action="main.php">
+    아이디 : <input type="text" name="userid" required><br><br>
+    이름 : <input type="text" name="name" required><br>
+    <input type="hidden" name="user_id" value="0001">
+    <br>
+    <div id="flogin">
+      <input type="submit" value="로그인">
+      
+    </div>
+  </form>
+</div>
+</body>
+</html>
